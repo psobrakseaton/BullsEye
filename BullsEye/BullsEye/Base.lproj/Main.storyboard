@@ -52,6 +52,9 @@
                                 <rect key="frame" x="30" y="270" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="startOver" destination="BYZ-38-t0r" eventType="touchUpInside" id="9BV-Z8-IMH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i5-1O-PeL">
                                 <rect key="frame" x="526" y="274" width="22" height="22"/>
@@ -104,8 +107,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="RI6-7b-ckV" id="V65-F1-PUJ"/>
                         <outlet property="slider" destination="bR0-KE-SiF" id="zJx-8a-gsq"/>
                         <outlet property="targetLabel" destination="pGL-gA-Im7" id="awH-LV-9XT"/>
+                        <outlet property="targetScore" destination="kcF-47-ELZ" id="1yk-bz-tpp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
